@@ -54,7 +54,7 @@ public class HookImp {
     public void beforeScenario(){
         try {
             System.out.println("HUB_URL:"+ System.getenv("HUB_URL"));
-            logger.info("hubUrl: ",System.getenv("hubURL"));
+            logger.info("hubUrl: ",System.getProperty("hubURL"));
             logger.info("platform: ",System.getenv("platform"));
             logger.info("udid: ",System.getenv("udid"));
             logger.info("sessionid: ",System.getenv("sessionid"));
